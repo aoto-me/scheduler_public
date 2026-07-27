@@ -50,7 +50,7 @@
     "@tiptap/core": "^3.19.0",
     "@tiptap/extension-bubble-menu": "^3.19.0",
     "@tiptap/extension-code-block-lowlight": "^3.19.0",
-    "@tiptap/extension-collaboration": "^3.19.0",
+    "@tiptap/extension-collaboration": "^3.29.1",
     "@tiptap/extension-drag-handle": "^3.19.0",
     "@tiptap/extension-drag-handle-react": "^3.19.0",
     "@tiptap/extension-file-handler": "^3.19.0",
