@@ -1,0 +1,120 @@
+.ag-root-wrapper {
+  border-radius: 0 0 8px 8px !important;
+  overflow: visible;
+}
+
+.ag-cell-value {
+  line-height: 1.65;
+  padding: 8px;
+}
+
+.ag-cell-wrapper > .ag-cell-value {
+  padding: 8px 0px;
+}
+
+.ag-cell-value a {
+  text-decoration: underline;
+}
+
+.ag-cell-value > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ag-cell-value > .select {
+  background-color: #ebebeb;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+
+.ag-cell-value > .select[data-num$='0'] {
+  background-color: #ebebeb;
+}
+
+.ag-cell-value > .select[data-num$='1'] {
+  background-color: #f1dcdc;
+}
+
+.ag-cell-value > .select[data-num$='2'] {
+  background-color: #cadae9;
+}
+
+.ag-cell-value > .select[data-num$='3'] {
+  background-color: #d2e5e4;
+}
+
+.ag-cell-value > .select[data-num$='4'] {
+  background-color: #f5ecd1;
+}
+
+.ag-cell-value > .select[data-num$='5'] {
+  background-color: #e1dbed;
+}
+
+.ag-cell-value > .select[data-num$='6'] {
+  background-color: #f5dee9;
+}
+
+.ag-cell-value > .select[data-num$='7'] {
+  background-color: #dfeef0;
+}
+
+.ag-cell-value > .select[data-num$='8'] {
+  background-color: #f7dfc7;
+}
+
+.ag-cell-value > .select[data-num$='9'] {
+  background-color: #ddeeda;
+}
+
+.ag-cell-wrapper.ag-checkbox-cell {
+  width: 100%;
+  justify-content: center;
+}
+.ag-cell-inline-editing {
+  padding: 0;
+}
+
+.ag-pinned-left-header {
+  border-right: solid 1px #d1d1d1;
+}
+.ag-cell.ag-cell-last-left-pinned:not(
+    .ag-cell-range-right,
+    .ag-cell-range-single-cell,
+    .ag-cell-focus:not(.ag-cell-range-selected):focus-within
+  ) {
+  border-right: solid 1px #d1d1d1;
+}
+
+.ag-input-wrapper:before {
+  opacity: 0;
+}
+
+.ag-cell.ag-cell-normal-height[col-id='URL'],
+.ag-cell.ag-cell-normal-height[col-id='date'],
+.ag-cell.ag-cell-normal-height[col-id='num'] {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ag-cell.ag-cell-normal-height[col-id='select'],
+.ag-cell.ag-cell-auto-height[col-id='img'] {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ag-input-field-input.ag-text-area-input {
+  padding: 0.5rem;
+}
+
+@media (hover: hover) {
+  #tableMenu-button:hover {
+    background-image:
+      linear-gradient(180deg, rgba(80, 80, 80, 0.93), rgba(80, 80, 80, 0.93)), url(../../../../public/img/noise.webp) !important;
+  }
+}

@@ -1,0 +1,37 @@
+import { iconSetQuartzLight, themeQuartz } from 'ag-grid-community';
+
+export const myTheme = themeQuartz.withPart(iconSetQuartzLight).withParams({
+  accentColor: '#619fd1',
+  borderColor: '#33333312',
+  browserColorScheme: 'light',
+  cellHorizontalPadding: 10,
+  cellTextColor: '#333333',
+  columnBorder: true,
+  fontFamily: [
+    'YuGothic',
+    'Yu Gothic',
+    'Helvetica Neue',
+    'Helvetica',
+    'Hiragino Sans',
+    'ヒラギノ角ゴシック',
+    'Arial',
+    'Meiryo',
+    'sans-serif',
+  ],
+  fontSize: 14,
+  foregroundColor: '#333333',
+  headerFontFamily: [
+    'YuGothic',
+    'Yu Gothic',
+    'Helvetica Neue',
+    'Helvetica',
+    'Hiragino Sans',
+    'ヒラギノ角ゴシック',
+    'Arial',
+    'Meiryo',
+    'sans-serif',
+  ],
+  headerFontSize: 14,
+  headerFontWeight: 700,
+  headerTextColor: '#333333',
+});

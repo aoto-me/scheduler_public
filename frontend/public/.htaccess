@@ -1,0 +1,33 @@
+<IfModule mod_headers.c>
+<FilesMatch "\.(html|csv|webmanifest)$">
+Header set Cache-Control "no-cache"
+</FilesMatch>
+
+<FilesMatch "\.(js|css|png|jpg|jpeg|webp|svg|woff2|ttf)$">
+Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+
+<FilesMatch "(sw\.js|registerSW\.js)$">
+Header set Cache-Control "no-store"
+</FilesMatch>
+
+Header set Access-Control-Allow-Origin "http://localhost"
+
+Header add Cross-Origin-Opener-Policy "same-origin"
+
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+Header set X-DNS-Prefetch-Control "off"
+
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+Header always set Permissions-Policy "camera=(self), microphone=(self), fullscreen=(self), accelerometer=(), gyroscope=(), magnetometer=(), geolocation=(), usb=(), midi=(), payment=(), sync-xhr=()"
+
+Header unset X-Powered-By
+
+Header always set X-Content-Type-Options "nosniff"
+
+Header set Content-Security-Policy "default-src 'self'; base-uri 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://holidays-jp.github.io; img-src 'self' https: data: blob:; media-src 'self' https:; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; frame-ancestors 'none'; object-src 'none'; form-action 'self';"
+
+Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>

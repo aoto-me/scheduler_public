@@ -1,0 +1,52 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Cache / Tooling
+.php-cs-fixer.cache
+.cache/
+*.tsbuildinfo
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build Outputs
+dist/
+dist-ssr/
+
+# Environment Files
+*.local
+.env*
+!.env.example
+
+# Playwright
+.auth/
+test-results/
+playwright-report/
+blob-report/
+
+# Test User Data
+**/user1/*
+**/foodDB_standard.csv
+
+# FTP
+.ftpaccess
+
+# OS Generated Files
+.DS_Store
+
+# Visual Studio / Windows
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Temporary Files
+*.sw?
+
+# component
+**/DraggableMenu/
+**/KanbanBoard/
+**/BlockEditor/

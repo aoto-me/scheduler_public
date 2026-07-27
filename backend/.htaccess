@@ -1,0 +1,27 @@
+RewriteEngine On
+
+<Files ".env">
+    Require all denied
+</Files>
+
+<FilesMatch "\.(php)$">
+    Require all denied
+</FilesMatch>
+
+<Files "getFile.php">
+    Require all granted
+</Files>
+
+<Files "downloadZip.php">
+    Require all granted
+</Files>
+
+<FilesMatch "^(?!getFile\.php$|downloadZip\.php$|\.env$).+">
+    SetEnvIf Referer "^http://localhost" allow_from_site
+    Require env allow_from_site
+</FilesMatch>
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{HTTP_REFERER} ^http://localhost [NC]
+RewriteRule ^api/ public/index.php [QSA,L]

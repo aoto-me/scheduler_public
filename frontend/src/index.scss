@@ -1,0 +1,105 @@
+html,
+body {
+  background-image:
+    linear-gradient(180deg, rgba(247, 244, 240, 0.93), rgba(247, 244, 240, 0.93)), url(../public/img/noise.webp);
+  background-size: auto, 125px;
+  width: 100%;
+  min-height: 100vh;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  font-family:
+    YuGothic, 'Yu Gothic', 'Helvetica Neue', 'Helvetica', 'Hiragino Sans', Arial, 'ヒラギノ角ゴシック', Meiryo,
+    sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  word-break: break-all;
+  caret-color: #000;
+}
+
+::-moz-selection {
+  display: inline;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+::selection {
+  display: inline;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+ul,
+ol {
+  list-style-type: disc;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:focus-visible,
+*[role='button']:focus-visible,
+button:focus-visible {
+  outline-color: currentColor;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 1px;
+}
+
+button {
+  font-family: inherit;
+}
+
+video,
+img,
+svg {
+  object-fit: contain;
+  vertical-align: bottom;
+}
+
+code,
+pre {
+  font-family: 'Source Code Pro', Menlo, Consolas, Monaco, monospace, Meiryo, sans-serif;
+}
+
+input[type='search']:not(.MuiOutlinedInput-input):focus {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -1px;
+  outline-color: currentColor;
+}
+
+input[type='search'] {
+  background-color: #fff;
+  -webkit-appearance: searchfield;
+}
+
+input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgba(153,153,153,1)'%3E%3Cpath d='M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-right: 0px;
+}

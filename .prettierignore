@@ -1,0 +1,7 @@
+node_modules
+dist
+vendor
+playwright-report
+test-results
+**/e2e/.auth/**
+public

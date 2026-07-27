@@ -1,0 +1,25 @@
+const baseURL = import.meta.env.DEV ? 'http://localhost' : '';
+
+export const API_ENDPOINTS = {
+  ai: `${baseURL}/backend/api/ai/`,
+  diary: `${baseURL}/backend/api/diary/`,
+  download: `${baseURL}/backend/api/download/`,
+  file: `${baseURL}/backend/api/file/`,
+  food: `${baseURL}/backend/api/food/`,
+  gallery: `${baseURL}/backend/api/gallery/`,
+  health: `${baseURL}/backend/api/health/`,
+  memo: `${baseURL}/backend/api/memo/`,
+  menu: `${baseURL}/backend/api/menu/`,
+  money: `${baseURL}/backend/api/money/`,
+  monthlyMemo: `${baseURL}/backend/api/monthlyMemo/`,
+  ogp: `${baseURL}/backend/api/ogp/`,
+  project: `${baseURL}/backend/api/project/`,
+  rss: `${baseURL}/backend/api/rss/`,
+  search: `${baseURL}/backend/api/search/`,
+  section: `${baseURL}/backend/api/section/`,
+  setting: `${baseURL}/backend/api/setting/`,
+  table: `${baseURL}/backend/api/table/`,
+  todo: `${baseURL}/backend/api/todo/`,
+  upload: `${baseURL}/backend/api/upload/`,
+  user: `${baseURL}/backend/api/user/`,
+};
