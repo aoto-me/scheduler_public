@@ -64,7 +64,7 @@
     "@tiptap/extension-table": "^3.19.0",
     "@tiptap/extension-table-of-contents": "^3.19.0",
     "@tiptap/extension-text-align": "^3.19.0",
-    "@tiptap/extension-text-style": "^3.20.1",
+    "@tiptap/extension-text-style": "^3.29.1",
     "@tiptap/extension-typography": "^3.19.0",
     "@tiptap/extension-youtube": "^3.19.0",
     "@tiptap/extensions": "^3.20.1",
